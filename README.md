@@ -1,2 +1,4 @@
 # handwriting-detection
-Python model trained on EMNIST to recognize handwritten characters.
+Handwritten character recognition using CNN trained with EMNIST Dataset
+
+Application created with QT and PyTorch to recognize handwritten characters (upper and lower case letters and numbers). The canvas size and brush size on canvas were tuned to ensure accurate transformation to the 28px*28px input tensor for inference. The system was trained on the EMNIST Dataset and was trained for 5 epochs with a learning rate of 0.001. The CNN had the following structure: 3 convolutional layers, followed by a max pooling layer, and then simplified to 47 outputs by 2 fully connected layers. The results were mostly accurate (~90%) but the system had trouble distinguishing lower case letter with short extensions and versions of letters with curves instead of straight line boundaries. This can be improved with more training as well as further hyper parameter tuning.
